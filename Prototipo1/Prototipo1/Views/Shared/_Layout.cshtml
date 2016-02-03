@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/landing-page.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/FontCustom.css" rel="stylesheet" />
+</head>
+<body>
+    @RenderPage("~/Views/Shared/_Topo.cshtml")
+    <div class="row">
+        @Html.Partial("_MenuLateral")
+        <div class="span9">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="row">
+            @Html.Partial("_Rodape")
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
